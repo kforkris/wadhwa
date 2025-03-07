@@ -1,0 +1,162 @@
+.awardsContainer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+  
+    h2 {
+      font-family: 'Cormorant Garamond';
+      text-transform: uppercase;
+      color: #000;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 1.09em;
+      letter-spacing: 0.15em;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 13px;
+      letter-spacing: 0.6em;
+      font-family: Raleway;
+      font-weight: 500;
+      margin: 13px 0 0;
+      text-transform: uppercase;
+      line-height: 2.2em;
+      color: #c28562;
+      text-align: center;
+    }
+  
+    .awardCard {
+      width: 93%;
+      border: 1px solid #cb865d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 260px;
+      margin-top: 140px;
+  
+      img {
+        width: 100px;
+        margin-top: -120px;
+      }
+  
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Cormorant Garamond';
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1.22em;
+        letter-spacing: 0.15em;
+        margin-top: 50px;
+        width: 90%;
+      }
+  
+      h5 {
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-family: Raleway;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 23px;
+        color: #cb865d;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        width: 90%;
+      }
+    }
+  }
+  
+  // Responsive Styles for Tablet and Mobile
+  @media (max-width: 1024px) {
+    .awardsContainer {
+      margin-top: 40px; // Reduce margin for tablet
+  
+      h2 {
+        font-size: 48px; // Reduce font size for tablet
+        letter-spacing: 0.1em; // Adjust letter spacing
+      }
+  
+      p {
+        font-size: 12px; // Reduce font size for tablet
+        letter-spacing: 0.4em; // Adjust letter spacing
+      }
+  
+      .awardCard {
+        width: 45%; // Adjust width for tablet
+        margin: 20px 10px; // Add margin between cards
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .awardsContainer {
+      margin-top: 30px; // Further reduce margin for mobile
+  
+      h2 {
+        font-size: 36px; // Reduce font size for mobile
+        letter-spacing: 0.05em; // Adjust letter spacing
+      }
+  
+      p {
+        font-size: 11px; // Reduce font size for mobile
+        letter-spacing: 0.3em; // Adjust letter spacing
+      }
+  
+      .awardCard {
+        width: 100%; // Full width for mobile
+        margin: 20px 0px; // Adjust margin
+        height: auto; // Adjust height to fit content
+        padding: 20px; // Add padding for better spacing
+  
+        img {
+          margin-top: -80px; // Adjust image position
+        }
+  
+        h3 {
+          font-size: 18px; // Reduce font size for mobile
+          margin-top: 30px; // Adjust margin
+        }
+  
+        h5 {
+          font-size: 12px; // Reduce font size for mobile
+          letter-spacing: 2px; // Adjust letter spacing
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .awardsContainer {
+      margin-top: 20px; // Further reduce margin for small mobile devices
+  
+      h2 {
+        font-size: 28px; // Further reduce font size for small mobile devices
+      }
+  
+      p {
+        font-size: 10px; // Further reduce font size for small mobile devices
+        letter-spacing: 0.2em; // Adjust letter spacing
+      }
+  
+      .awardCard {
+        padding: 15px; // Further reduce padding for small mobile devices
+  
+        img {
+          margin-top: -60px; // Further adjust image position
+        }
+  
+        h3 {
+          font-size: 16px; // Further reduce font size for small mobile devices
+          margin-top: 20px; // Adjust margin
+        }
+  
+        h5 {
+          font-size: 10px; // Further reduce font size for small mobile devices
+          letter-spacing: 1px; // Adjust letter spacing
+        }
+      }
+    }
+  }

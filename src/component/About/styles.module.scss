@@ -1,0 +1,133 @@
+.aboutContainer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .leftContainer {
+      width: 40%;
+      flex-shrink: 0;
+  
+      h2 {
+        font-family: "Cormorant Garamond";
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 1.09em;
+        letter-spacing: 0.15em;
+        overflow-wrap: break-word;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-family: "Cormorant Garamond";
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        margin: 10px 0px;
+      }
+    }
+  
+    .rightContainer {
+      position: relative;
+      right: 83px;
+      display: flex;
+      justify-content: flex-end;
+  
+      .rightFrame {
+        border-left: 6px solid #d7926bfa;
+        position: absolute;
+        bottom: -50px;
+        right: -100px;
+      }
+    }
+  }
+  
+  // Responsive Styles for Tablet and Mobile
+  @media (max-width: 1024px) {
+    .aboutContainer {
+      flex-direction: column; // Stack containers vertically
+      align-items: flex-start; // Align items to the left
+      margin-top: 40px; // Reduce top margin
+        margin-bottom: 40px !important;
+      .leftContainer {
+        width: 100%; // Full width for left container
+        margin-bottom: 40px; // Add space between left and right containers
+  
+        h2 {
+          font-size: 48px; // Reduce font size for tablet
+          letter-spacing: 0.1em; // Adjust letter spacing
+        }
+  
+        p {
+          font-size: 18px; // Reduce font size for tablet
+          line-height: 28px; // Adjust line height
+        }
+      }
+  
+      .rightContainer {
+        position: static; // Remove absolute positioning
+        right: 0; // Reset right position
+        width: 100%; // Full width for right container
+        justify-content: flex-start; // Align content to the left
+        width: 70%;
+        display: block;
+        margin: auto;
+        img{
+            width: 90%;
+            margin: auto;
+        }
+        .rightFrame {
+          border-left: none; // Remove border for mobile
+          bottom: 0px; // Reset bottom position
+          right: 0px; // Reset right position
+          position: static;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .aboutContainer {
+        margin: auto;
+      margin-top: 30px; // Further reduce top margin for mobile
+    width: 90%;
+      .leftContainer {
+        h2 {
+          font-size: 36px; // Reduce font size for mobile
+          letter-spacing: 0.05em; // Adjust letter spacing
+          margin-bottom: 15px; // Reduce margin bottom
+        }
+  
+        p {
+          font-size: 16px; // Reduce font size for mobile
+          line-height: 24px; // Adjust line height
+        }
+      }
+  
+      .rightContainer {
+        .rightFrame {
+            margin-top: -120px;
+            width: 160px;
+            margin-left: 140px;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (min-width:768px)  and (max-width:1024px){
+    .aboutContainer{
+        .rightContainer{
+            .rightFrame{
+                position: relative;
+                bottom: 200px;
+                width: 420px;
+            }
+        }
+    }
+  }

@@ -1,0 +1,121 @@
+.detailsContainer {
+    background-image: url("../../../public/images/cement-texture.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 100px 0px 120px 0px;
+    background-size: cover;
+  
+    .elementor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .lastElementor{
+      .container{
+        width: 33%;
+      }
+    }
+  
+    .container {
+      flex-shrink: 0;
+      width: 50%;
+  
+      h3 {
+        text-align: center;
+        font-size: 70px;
+        color: #dcaaa7;
+        margin-top: 40px;
+        font-weight: 400;
+      }
+  
+      h5 {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 5px;
+        font-weight: 500;
+      }
+  
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  // Responsive Styles for Tablet and Mobile
+  @media (max-width: 1024px) {
+    .detailsContainer {
+      height: auto; // Adjust height to fit content
+      padding: 80px 0px; // Reduce padding for tablet
+      .elementor{
+        width: 90%;
+    }
+    .lastElementor{
+        .container{
+            width: 40%;
+        }
+    }
+      .container {
+        width: 70%; // Increase width for better readability
+  flex-shrink: inherit;
+        h3 {
+          font-size: 50px; // Reduce font size for tablet
+          margin-top: 30px; // Adjust margin
+        }
+  
+        h5 {
+          font-size: 14px; // Reduce font size for tablet
+          letter-spacing: 4px; // Adjust letter spacing
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .detailsContainer {
+      padding: 60px 0px; // Further reduce padding for mobile
+        
+      .container {
+        width: 90%; // Increase width for mobile
+        
+        h3 {
+          font-size: 36px; // Reduce font size for mobile
+          margin-top: 20px; // Adjust margin
+        }
+  
+        h5 {
+          font-size: 12px; // Reduce font size for mobile
+          letter-spacing: 3px; // Adjust letter spacing
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .detailsContainer {
+      padding: 40px 0px; // Further reduce padding for small mobile devices
+      .elementor{
+        flex-wrap: wrap; 
+        row-gap: 60px;
+      }
+      .container {
+        width: 100%; // Full width for small mobile devices
+  
+        h3 {
+          font-size: 28px; // Further reduce font size for small mobile devices
+          margin-top: 15px; // Adjust margin
+        }
+  
+        h5 {
+          font-size: 14px; // Further reduce font size for small mobile devices
+          letter-spacing: 2px; // Adjust letter spacing
+          line-height: 30px;
+          max-width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.react-multi-carousel-dot-list{
+    flex-direction: column-reverse !important;
+    left: 28px !important;
+    top: 0px !important;
+    align-items: flex-start !important;
+    li{
+        margin-top: 20px;
+        stroke: rgba(215,146,107,.6) !important;
+    }
+    
+}
+
+.EZDrawer .EZDrawer__container{
+    width: 400px !important;
+}
+@media screen and (max-width:1024px){
+    .react-multi-carousel-dot-list{
+        display: none !important;
+    }
+    .EZDrawer .EZDrawer__container{
+        width: 100% !important;
+    }
+}

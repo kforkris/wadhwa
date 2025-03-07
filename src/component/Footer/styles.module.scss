@@ -1,0 +1,155 @@
+/* Footer Container */
+.footer{
+    background-color: #19130b;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0 solid rgba(12, 7, 5, .1);
+    margin-top: 400px;
+    .socialsLink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid #363636;
+        padding-bottom: 20px;
+        >div{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: 1px solid rgba(194,133,98,.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                cursor: pointer;
+                color: #c28562;
+            }
+        }
+    }
+    .copyright{
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    h6{
+        text-align: center;
+        color: #6f6d6b;
+        letter-spacing: 3px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: "Raleway";
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+}
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 50px;
+    
+  }
+  
+  /* Each Footer Section */
+  .footerSection {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    margin: 10px;
+    min-width: 200px; /* Minimum width for each section */
+  }
+  
+  .footerSection h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.45em;
+    font-weight: 500;
+    letter-spacing: .1em;
+  }
+
+  .footerContainer p{
+    font-family: "Cormorant Garamond";
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #FFF;
+    span{
+        color: #d7962b;
+    }
+    a{
+        color: #b2b2b2;
+        text-decoration: none;
+    }
+  }
+  
+  .footerSection h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #b2b2b2;
+    font-weight: 500;
+  }
+  
+
+
+  .footerSection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerSection ul li {
+    margin: 8px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #b2b2b2;
+    font-weight: 500;
+  }
+  
+  .footerSection ul li a {
+    color: #b2b2b2;
+    text-decoration: none;
+
+  }
+  
+  .footerSection ul li a:hover {
+    color: #FFF;
+  }
+  
+  /* Form Styles */
+  .footerSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inputField {
+    padding: 10px;
+    border-bottom: 1px solid #474747;
+    font-size: 14px;
+    background: #19130b;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    color: #FFF;
+    margin-bottom: 12px;
+  }
+  
+  
+  
+
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footerSection {
+      margin: 20px 0;
+    }
+  }

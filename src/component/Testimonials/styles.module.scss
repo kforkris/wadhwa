@@ -1,0 +1,102 @@
+.testimonialContainer {
+    background-image: url("../../../public/images/cement-texture.jpg");
+    padding: 60px 0px;
+
+    h2 {
+        font-size: 56px;
+        font-family: "Cormorant Garamond";
+        text-transform: uppercase;
+        color: #000;
+        line-height: 1.45em;
+        font-weight: 500;
+        letter-spacing: .1em;
+        margin: 25px 0;
+        word-wrap: break-word;
+        text-align: center;
+
+        // Responsive font size for h2
+        @media (max-width: 1024px) {
+            font-size: 48px;
+        }
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+        @media (max-width: 480px) {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        font-size: 25px;
+        max-width: 80%;
+        font-family: "Cormorant Garamond";
+        color: #615E5e;
+        text-align: center;
+        margin: auto;
+
+        // Responsive font size and max-width for p
+        @media (max-width: 1024px) {
+            font-size: 22px;
+            max-width: 90%;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+            max-width: 95%;
+        }
+        @media (max-width: 480px) {
+            font-size: 18px;
+            max-width: 100%;
+        }
+    }
+
+    .testimonialImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // Responsive image size
+            
+        }
+    }
+
+    h5 {
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 20px;
+        letter-spacing: .1em;
+        text-align: center;
+
+        // Responsive font size for h5
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+        @media (max-width: 480px) {
+            font-size: 18px;
+        }
+    }
+
+    h6 {
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: .6em;
+        font-family: Raleway;
+        font-weight: 500;
+        color: #c28562;
+        margin-top: 10px;
+
+        // Responsive font size for h6
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+        @media (max-width: 480px) {
+            font-size: 11px;
+        }
+    }
+}

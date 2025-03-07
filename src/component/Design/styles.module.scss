@@ -1,0 +1,156 @@
+.designContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  
+    .leftWrapper {
+      flex-shrink: 0;
+      width: 50%;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .rightWrapper {
+      padding: 13.3% 8% 13.3% 8%;
+      padding-bottom: 0px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      background-image: url('../../../public/images/cement-texture.jpg');
+  
+      h3 {
+        font-family: 'Cormorant Garamond';
+        text-transform: uppercase;
+        color: #000;
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1.22em;
+        letter-spacing: 0.15em;
+        word-wrap: break-word;
+      }
+  
+      p {
+        font-size: 13px;
+        letter-spacing: 0.6em;
+        font-family: Raleway;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 2.2em;
+        color: #c28562;
+        white-space: pre;
+      }
+  
+      ul {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family: Cormorant;
+        color: #615e5e;
+      }
+  
+      li {
+        list-style: none;
+        font-family: Cormorant;
+        width: 50%;
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+  
+      li::before {
+        content: '\003E';
+      }
+  
+      .VENTILIT {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+  
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+  
+  // Responsive Styles for Tablet and Mobile
+  @media (max-width: 1024px) {
+    .designContainer {
+      flex-direction: column; // Stack containers vertically
+  
+      .leftWrapper,
+      .rightWrapper {
+        width: 100%; // Full width for both containers
+      }
+  
+      .rightWrapper {
+        padding: 40px 20px; // Adjust padding for tablet
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .designContainer {
+      margin-top: 20px; // Reduce margin for mobile
+  
+      .rightWrapper {
+        padding: 30px 15px; // Further reduce padding for mobile
+  
+        h3 {
+          font-size: 36px; // Reduce font size for mobile
+          letter-spacing: 0.1em; // Adjust letter spacing
+        }
+  
+        p {
+          font-size: 12px; // Reduce font size for mobile
+          letter-spacing: 0.4em; // Adjust letter spacing
+        }
+  
+        li {
+          width: 100%; // Full width for list items on mobile
+          font-size: 14px; // Reduce font size for mobile
+        }
+  
+        .VENTILIT {
+          margin-top: 20px; // Adjust margin for mobile
+  
+          img {
+            width: 150px; // Reduce image size for mobile
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .designContainer {
+      .rightWrapper {
+        padding: 20px 10px; // Further reduce padding for small mobile devices
+  
+        h3 {
+          font-size: 28px; // Further reduce font size for small mobile devices
+        }
+  
+        p {
+          font-size: 10px; // Further reduce font size for small mobile devices
+          letter-spacing: 0.3em; // Adjust letter spacing
+        }
+  
+        li {
+          font-size: 12px; // Further reduce font size for small mobile devices
+        }
+  
+        .VENTILIT {
+          img {
+            width: 120px; // Further reduce image size for small mobile devices
+          }
+        }
+      }
+    }
+  }
